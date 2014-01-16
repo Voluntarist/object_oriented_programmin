@@ -14,7 +14,7 @@ end
 class Student < Person
 
   def learn
-    "I get it!"
+    puts "I get it!"
   end
 
 end
@@ -22,7 +22,7 @@ end
 class Teacher < Person
 
   def teach
-    "Everything in ruby is an object"
+    puts "Everything in ruby is an object"
   end
 
 end
@@ -35,3 +35,11 @@ instructor.greeting
 student1 = Student.new
 student1.name = "Cristina"
 student1.greeting
+
+
+
+instructor.teach
+student1.learn
+
+# this does not work because the student object has no knowlege of the teach method only the teacher has access to that method.
+student.teach
