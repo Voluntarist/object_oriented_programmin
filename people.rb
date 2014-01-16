@@ -31,3 +31,7 @@ instructor = Teacher.new
 instructor.name = "Chris"
 instructor.greeting
 
+
+student1 = Student.new
+student1.name = "Cristina"
+student1.greeting
